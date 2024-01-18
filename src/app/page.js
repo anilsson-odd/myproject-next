@@ -1,7 +1,53 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
+import { IoIosCube } from 'react-icons/io';
+import Logo from '../components/Logo';
+import main from '../../public/shop.png';
 
 export default function Home() {
   return (
+    <>
+      <div className='text-center mt-8'>
+        <Logo />
+      </div>
+      <div className='text-sky-500 text-center italic'>
+        Helping customers to find the perfect computer since 2023!
+      </div>
+      <div className='flex items-center justify-center mt-24 w-full'>
+        <div className='text-sky-400 border-solid border-l-4 border-sky-400 leading-6 text-lg pl-5 pr-32 w-2/5'>
+          <p>
+            I'm baby pour-over PBR&B shabby chic, crucifix beard vinyl prism
+            poke pork belly drinking vinegar meh man braid truffaut shaman
+            letterpress. Vexillologist tonx swag ethical. 90's selvage JOMO,
+            craft beer crucifix hexagon iceland flannel synth. Literally cred
+            whatever gochujang distillery hoodie banjo church-key cloud bread
+            vibecession tonx blog typewriter forage bespoke. Chia aesthetic
+            kickstarter +1 you probably haven't heard of them viral fixie
+            tumeric locavore DSA affogato. Sus same austin chambray woke
+            blackbird spyplane mlkshk selvage truffaut next level mustache
+            normcore jawn.
+          </p>
+        </div>
+        <div className='w-1/5'>
+          <Image src={main.src} width={500} height={500} alt='store image' />
+        </div>
+      </div>
+      <div className='flex justify-center'>
+        <Link href='/store'>
+          <button
+            type='button'
+            className='font-button bg-sky-700 border-none border-black rounded-full text-white text-4xl py-3 px-10 hover:bg-sky-800 active:bg-sky-900'
+          >
+            Start Browsing{' '}
+            <div className='inline-block align-middle'>
+              <IoIosCube />
+            </div>
+          </button>
+        </Link>
+      </div>
+    </>
+  );
+  /*  return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -109,5 +155,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  )*/
 }
