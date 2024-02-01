@@ -1,6 +1,6 @@
 import { BiLaptop, BiDesktop, BiPrinter } from 'react-icons/bi';
 
-export default [
+const links = [
   {
     text: 'Laptops',
     icon: <BiLaptop />,
@@ -17,3 +17,5 @@ export default [
     link: 'printers',
   },
 ];
+
+export default links;

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import links from '../utils/links';
+import links from '@/utils/links';
+import paths from '@/utils/paths';
 
 const SidebarItems = ({ toggleSidebar }) => {
   return (
@@ -8,7 +9,7 @@ const SidebarItems = ({ toggleSidebar }) => {
         return (
           <Link
             key={idx}
-            href={`/store/${item.link}`}
+            href={paths.productsList(item.link)}
             className={
               false
                 ? 'block pl-4 text-sky-700 text-2xl mt-4 no-underline w-4/5 border-solid border-l-2 border-slate-500 pl-3.5'

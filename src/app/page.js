@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { IoIosCube } from 'react-icons/io';
-import Logo from '../components/Logo';
-import main from '../../public/shop.png';
+import Logo from '@/components/Logo';
+import main from '@/../public/shop.png';
+import paths from '@/utils/paths';
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <div className='text-center mt-8'>
@@ -16,15 +17,15 @@ export default function Home() {
       <div className='flex items-center justify-center mt-24 w-full'>
         <div className='text-sky-400 border-solid border-l-4 border-sky-400 leading-6 text-lg pl-5 pr-32 w-2/5'>
           <p>
-            I'm baby pour-over PBR&B shabby chic, crucifix beard vinyl prism
-            poke pork belly drinking vinegar meh man braid truffaut shaman
-            letterpress. Vexillologist tonx swag ethical. 90's selvage JOMO,
-            craft beer crucifix hexagon iceland flannel synth. Literally cred
-            whatever gochujang distillery hoodie banjo church-key cloud bread
-            vibecession tonx blog typewriter forage bespoke. Chia aesthetic
-            kickstarter +1 you probably haven't heard of them viral fixie
-            tumeric locavore DSA affogato. Sus same austin chambray woke
-            blackbird spyplane mlkshk selvage truffaut next level mustache
+            I&apos;m baby pour-over PBR&B shabby chic, crucifix beard vinyl
+            prism poke pork belly drinking vinegar meh man braid truffaut shaman
+            letterpress. Vexillologist tonx swag ethical. 90&apos;s selvage
+            JOMO, craft beer crucifix hexagon iceland flannel synth. Literally
+            cred whatever gochujang distillery hoodie banjo church-key cloud
+            bread vibecession tonx blog typewriter forage bespoke. Chia
+            aesthetic kickstarter +1 you probably haven&apos;t heard of them
+            viral fixie tumeric locavore DSA affogato. Sus same austin chambray
+            woke blackbird spyplane mlkshk selvage truffaut next level mustache
             normcore jawn.
           </p>
         </div>
@@ -33,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <div className='flex justify-center'>
-        <Link href='/store'>
+        <Link href={paths.store()}>
           <button
             type='button'
             className='font-button bg-sky-700 border-none border-black rounded-full text-white text-4xl py-3 px-10 hover:bg-sky-800 active:bg-sky-900'
