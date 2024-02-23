@@ -12,8 +12,8 @@ const SidebarItems = ({ toggleSidebar }) => {
             href={paths.productsList(item.link)}
             className={
               false
-                ? 'block pl-4 text-sky-700 text-2xl mt-4 no-underline w-4/5 border-solid border-l-2 border-slate-500 pl-3.5'
-                : 'block pl-4 text-sky-700 text-2xl mt-4 no-underline w-4/5'
+                ? 'block pl-4 text-slate-600 text-2xl mt-4 no-underline w-4/5 border-solid border-l-2 border-slate-500 pl-3.5'
+                : 'block pl-4 text-slate-600 text-2xl mt-4 no-underline w-4/5'
             }
             onClick={(e) => toggleSidebar && toggleSidebar()}
           >

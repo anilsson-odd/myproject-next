@@ -9,10 +9,10 @@ const merriweather = Merriweather({
 const Logo = () => {
   return (
     <h1 className={`block text-center ${merriweather.className}`}>
-      <span className='inline-block tracking-widest text-6xl text-sky-400 first-letter:text-7xl first-letter:text-sky-300'>
+      <span className='inline-block tracking-widest text-xl text-blue-500 first-letter:text-2xl'>
         Mega
       </span>{' '}
-      <span className='inline-block tracking-widest text-6xl text-sky-400 first-letter:text-7xl first-letter:text-sky-300'>
+      <span className='inline-block tracking-widest text-xl text-blue-500 first-letter:text-2xl'>
         Store
       </span>
     </h1>
