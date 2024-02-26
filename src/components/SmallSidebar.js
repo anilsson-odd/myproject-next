@@ -11,9 +11,9 @@ const SmallSidebar = () => {
           : 'hidden'
       }
     >
-      <div className='relative flex justify-center items-center bg-slate-300 opacity-80 shadow rounded-lg h-64 w-64'>
+      <div className='relative flex justify-center items-center bg-slate-300 bg-opacity-80 shadow rounded-lg h-64 w-64 z-10'>
         <div
-          className='flex justify-center items-center absolute top-[-5px] right-[-5px] cursor-default bg-gray-700 border-2 border-white rounded-full text-white w-6 h-6 p-1'
+          className='flex justify-center items-center absolute top-[-5px] right-[-5px] cursor-default bg-gray-700 opacity-100 border-2 border-white rounded-full text-white w-6 h-6 p-1'
           onClick={(e) => toggleSidebar()}
         >
           X

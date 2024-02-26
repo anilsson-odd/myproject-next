@@ -22,7 +22,7 @@ const Navbar = () => {
           <Button color='primary' variant='bordered' size='sm' radius='sm'>
             Sign Up
           </Button>
-          <LogoAlt />
+          <div className='pr-14'></div>
         </div>
       </div>
     </div>
