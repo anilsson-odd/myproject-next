@@ -44,7 +44,7 @@ export default async function Home() {
         <Link href={paths.store()}>
           <button
             type='button'
-            className='bg-sky-700 border-none border-black rounded-full text-white text-4xl py-3 px-10 hover:bg-sky-800 active:bg-sky-900'
+            className='bg-sky-700 border-none border-black rounded-full text-white text-4xl py-3 px-10 mt-8 hover:bg-sky-800 active:bg-sky-900'
           >
             Start Browsing{' '}
             <div className='inline-block align-middle'>
