@@ -22,6 +22,14 @@ const paths = {
   admin() {
     return '/store/admin';
   },
+
+  login() {
+    return "/store/login";
+  },
+
+  register() {
+    return "/store/register";
+  },
 };
 
 export default paths;
