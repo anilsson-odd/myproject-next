@@ -3,8 +3,13 @@ import paths from '@/utils/paths';
 import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
+import { Button, Card, CardBody, Input } from "@nextui-org/react";
+import { useState } from "react";
+
 const LoginPage = () => {
   const router = useRouter();
+
+  const [message, setMessage] = useState("");
 
   async function handleSignIn(e) {
     e.preventDefault();
@@ -21,7 +26,7 @@ const LoginPage = () => {
       });
 
       if (result.error) {
-        console.error('Sign in error:', result.error);
+        setMessage(result.error);
       }
       else if (result.ok) {
         router.push(paths.store());
@@ -32,22 +37,25 @@ const LoginPage = () => {
   }
 
   return (
-    <>
-      <h1>Login</h1>
+    <div className="flex flex-col items-center">
       <form
         onSubmit={handleSignIn}
       >
-        <label>
-          Email
-          <input name='email' type='email' />
-        </label>
-        <label>
-          Password
-          <input name='password' type='password' />
-        </label>
-        <button type='submit'>Sign In</button>
+        <h1 className="text-xl mt-5 text-center">Login</h1>
+        <Card>
+          <CardBody>
+            <div className="flex flex-col justify-center items-center">
+              <Input className="w-96" name='email' type='email' label="Email" placeholder="Enter your email" />
+              <br />
+              <Input className="w-96" name='password' type='password' label="Password" placeholder="Enter your password" />
+              <br />
+              {message}
+              <Button type='submit'>Sign In</Button>
+            </div>
+          </CardBody>
+        </Card>
       </form>
-    </>
+    </div>
   );
 }
 

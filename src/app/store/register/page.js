@@ -36,23 +36,23 @@ const SignupPage = () => {
 
   return (
     <div className="flex flex-col items-center">
-    <form
-      onSubmit={handleSignUp}
-    >
-      <h1 className="text-xl mt-5 text-center">Register</h1>
+      <form
+        onSubmit={handleSignUp}
+      >
+        <h1 className="text-xl mt-5 text-center">Register</h1>
         <Card>
           <CardBody>
-        <div className="flex flex-col justify-center items-center">
-          <Input className="w-96" name='email' type='email' label="Email" placeholder="Enter your email" />
-          <br />
-          <Input className="w-96" name="name" type="text" label="Name" placeholder="Enter your full name" />
-          <br />
-          <Input className="w-96" name='password' type='password' label="Password" placeholder="Enter your password" />
-          <br />
-          {message}
-          <Button type='submit'>Sign Up</Button>
-        </div>
-        </CardBody>
+            <div className="flex flex-col justify-center items-center">
+              <Input className="w-96" name='email' type='email' label="Email" placeholder="Enter your email" />
+              <br />
+              <Input className="w-96" name="name" type="text" label="Name" placeholder="Enter your full name" />
+              <br />
+              <Input className="w-96" name='password' type='password' label="Password" placeholder="Enter your password" />
+              <br />
+              {message}
+              <Button type='submit'>Sign Up</Button>
+            </div>
+          </CardBody>
         </Card>
       </form>
     </div>
