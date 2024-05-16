@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
     <div className='bg-sky-900 text-white border-b-2 border-solid border-slate-200 pl-4 h-16'>
       <div className='flex justify-between items-middle h-full'>
-        <div className='inline-block color-white mt-4' onClick={toggleSidebar}>
+        <div className='inline-block mt-4' onClick={toggleSidebar}>
           <div className='inline-block align-middle'>
             <FaAlignJustify />
           </div>
         </div>
-        <div className='flex gap-4 items-end pb-2'>
+        <div className='flex gap-4 items-end pb-3.5'>
           {
             session
               ? <>
