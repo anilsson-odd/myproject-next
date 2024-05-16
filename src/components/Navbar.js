@@ -11,7 +11,7 @@ const Navbar = () => {
   const { data: session } = useSession();
 
   return (
-    <div className='bg-sky-50 border-b-2 border-solid border-slate-200 pl-4 h-16'>
+    <div className='bg-sky-900 text-white border-b-2 border-solid border-slate-200 pl-4 h-16'>
       <div className='flex justify-between items-middle h-full'>
         <div className='inline-block color-white mt-4' onClick={toggleSidebar}>
           <div className='inline-block align-middle'>
@@ -24,6 +24,7 @@ const Navbar = () => {
               ? <>
                   Signed in
                   <Button
+                    className="text-white"
                     color="default"
                     variant="bordered"
                     size="sm"
@@ -35,7 +36,8 @@ const Navbar = () => {
                 </>
               : <>
                   <Button
-                    color='primary'
+                    className="text-white"
+                    color='default'
                     variant='bordered'
                     size='sm'
                     radius='sm'
@@ -44,7 +46,8 @@ const Navbar = () => {
                     Sign In
                   </Button>
                   <Button
-                    color='primary'
+                    className="text-white"
+                    color='default'
                     variant='bordered'
                     size='sm'
                     radius='sm'
